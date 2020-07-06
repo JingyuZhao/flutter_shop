@@ -11,11 +11,11 @@ Future getHomePageContent() async {
     print('开始获取首页数据...............');
     Response response;
     Dio dio = new Dio();
-    dio.options.contentType =
-        ContentType.parse('application/x-www-form-urlencoded');
+    dio.options.contentType = "application/x-www-form-urlencoded";
     var formData = {'lon': '121.42184448242188', 'lat': '31.200902938842773'};
     response = await dio.post(servicePath['homePageContent'], data: formData);
     if (response.statusCode == 200) {
+      print(response.data);
       return response.data;
     } else {
       throw Exception('后端接口出现异常，请检测代码和服务器情况.........');
@@ -33,8 +33,7 @@ Future postRequest(String url, {var paramter}) async {
     print("开始上拉加载数据");
     Response response;
     Dio dio = new Dio();
-    dio.options.contentType =
-        ContentType.parse('application/x-www-form-urlencoded');
+    dio.options.contentType = "application/x-www-form-urlencoded";
     if (paramter == null) {
       response = await dio.post(servicePath[url]);
     } else {
@@ -58,8 +57,7 @@ Future getRequest(String url, {var paramter}) async {
     print("开始上拉加载数据");
     Response response;
     Dio dio = new Dio();
-    dio.options.contentType =
-        ContentType.parse('application/x-www-form-urlencoded');
+    dio.options.contentType = "application/x-www-form-urlencoded";
     if (paramter == null) {
       response = await dio.get(servicePath[url]);
     } else {

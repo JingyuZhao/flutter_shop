@@ -29,7 +29,27 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>shared_preferences_macos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>shared_preferences_web.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>url_launcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>url_launcher_macos.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>url_launcher_web.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
